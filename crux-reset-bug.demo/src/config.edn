@@ -1,0 +1,7 @@
+{:ig/system
+ {:crux-reset-bug.demo.foo/string "Hello, crux-reset-bug.demo!"
+  :edge.yada.ig/listener {:handler #ig/ref :edge.bidi.ig/vhost
+                          :port 5600}
+  :edge.bidi.ig/vhost [["http://localhost:5600"
+                        [""
+                         [["/" #ig/ref :crux-reset-bug.demo.foo/string]]]]]}}
