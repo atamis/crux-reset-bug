@@ -1,7 +1,8 @@
 {:ig/system
  {:crux-reset-bug.demo.foo/string "Hello, crux-reset-bug.demo!"
-  :edge.yada.ig/listener {:handler #ig/ref :edge.bidi.ig/vhost
-                          :port 5600}
-  :edge.bidi.ig/vhost [["http://localhost:5600"
-                        [""
-                         [["/" #ig/ref :crux-reset-bug.demo.foo/string]]]]]}}
+
+  [:juxt.crux.ig.system/cluster-node :crux-reset-bug.demo/system]
+  {:kv-backend "crux.kv.memdb.MemKv"
+   :bootstrap-servers "localhost:9092"}
+  :crux-reset-bug.demo/crux-test
+  #ig/ref [:juxt.crux.ig.system/cluster-node :crux-reset-bug.demo/system]}}

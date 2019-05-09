@@ -8,7 +8,12 @@
   juxt.edge/bidi.ig {:local/root "../lib/edge.ig.bidi"}
   integrant {:mvn/version "0.7.0"}
 
-  org.clojure/tools.logging {:mvn/version "0.5.0-alpha"}}
+  org.clojure/tools.logging {:mvn/version "0.5.0-alpha"}
+
+  crux.ig {:local/root "../lib/crux.ig"}
+  juxt/crux {:mvn/version "19.04-1.0.2-alpha"}
+  org.apache.kafka/kafka_2.11 {:mvn/version "2.1.0"}
+  }
 
  :aliases
  {:dev
