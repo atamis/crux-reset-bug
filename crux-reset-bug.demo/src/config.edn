@@ -1,7 +1,5 @@
 {:ig/system
- {:crux-reset-bug.demo.foo/string "Hello, crux-reset-bug.demo!"
-
-  [:juxt.crux.ig.system/cluster-node :crux-reset-bug.demo/system]
+ {[:juxt.crux.ig.system/cluster-node :crux-reset-bug.demo/system]
   {:kv-backend "crux.kv.memdb.MemKv"
    :bootstrap-servers "localhost:9092"}
   :crux-reset-bug.demo/crux-test
