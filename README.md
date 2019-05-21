@@ -1,5 +1,7 @@
 # crux-reset-bug
 
+Archived because I can't repro this.
+
 ## Repro steps
 
 1. Ensure Kafka is running on localhost:9092 (or adjust
